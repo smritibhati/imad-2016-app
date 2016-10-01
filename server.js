@@ -48,9 +48,14 @@ var articles = {
     };
  function createTemplate(data)
  {
+    var title=data.title;
+    var heading=data.heading;
+    var content=data.content;
+    var date=data.date;
+    
     var htmlTemplate = `<html>
         <head>
-            <title> ${data.title} </title>
+            <title> ${title} </title>
             <link href="/ui/style.css" rel="stylesheet" />
             <meta name='viewpoint' content='width-device-width initial scale=1'/>
         </head>
@@ -60,13 +65,13 @@ var articles = {
             </div>
             <hr>
             <h3>
-                ${data.heading}
+                ${heading}
             </h3>
             <div>
-                ${data.date}
+                ${date}
             </div>
             <div>
-                ${data.content}
+                ${content}
             </div>
         </body>
     </html>
