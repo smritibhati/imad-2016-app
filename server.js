@@ -34,7 +34,7 @@ var articles = {
                 
             },
      'article-three':{
-         title: "Article-Three",
+          title: "Article-Three",
           heading: "Article-Three",
           date: "7 Sep 2016",
           content: `
@@ -48,10 +48,10 @@ var articles = {
     };
  function createTemplate(data)
  {
-    var title=data.title;
-    var heading=data.heading;
-    var content=data.content;
-    var date=data.date;
+    var title = data.title;
+    var heading = data.heading;
+    var content = data.content;
+    var date = data.date;
     
     var htmlTemplate = `<html>
         <head>
@@ -92,7 +92,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-var articleName= req.params.articleNames;
+var articleName= req.params.articleName;
 res.send(createTemplate(articles[articleName]));
 });
 
