@@ -17,6 +17,7 @@
              }
          }
      };
-     };
+     
      request.open('GET','http://smritibhati.imad.hasura-app.io/counter',true);
      request.send(null);
+    };
