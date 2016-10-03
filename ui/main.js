@@ -3,7 +3,7 @@
     {
  
      var request = new XMLHttpRequest();
-     
+alert(request.readyState);
      request.onreadystatechange= function()
      {
          
